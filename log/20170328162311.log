@@ -1,0 +1,3 @@
+[2017-03-28 16:23:11,676] [DEBUG] Starting new HTTP connection (1): 210.14.142.85
+[2017-03-28 16:23:12,109] [DEBUG] http://210.14.142.85:8003 "POST /hhyAppServer/loginUser HTTP/1.1" 200 None
+[2017-03-28 16:23:12,111] [INFO] 1 登录成功~【200】,{"desc":"登录成功","code":1,"userID":"e09cdad5-2f87-41eb-b6aa-8137fb8f7dd6"}

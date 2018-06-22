@@ -1,0 +1,20 @@
+[2017-03-28 10:57:19,367] [DEBUG] Starting new HTTP connection (1): 210.14.142.85
+[2017-03-28 10:57:19,461] [DEBUG] http://210.14.142.85:8003 "POST /hhyAppServer/loginUser HTTP/1.1" 200 None
+[2017-03-28 10:57:19,463] [INFO] 1 登录成功，200,{"desc":"登录成功","code":1,"userID":"e09cdad5-2f87-41eb-b6aa-8137fb8f7dd6"}
+[2017-03-28 10:57:19,509] [DEBUG] http://210.14.142.85:8003 "POST /hhyAppServer/registerUser HTTP/1.1" 200 None
+[2017-03-28 10:57:19,510] [ERROR] 2 注册失败！！！，【200】，{"desc":"注册失败,验证码错误","code":0,"userID":""}
+[2017-03-28 10:57:19,515] [DEBUG] Starting new HTTP connection (1): 210.14.142.85
+[2017-03-28 10:57:19,767] [DEBUG] http://210.14.142.85:8003 "POST /hhyAppServer/getVerificationCode HTTP/1.1" 200 None
+[2017-03-28 10:57:19,769] [INFO] 3 通过手机号获取验证码成功，200,{"desc":"该手机号没有注册过","code":1,"userid":"","vcode":"522859"}
+[2017-03-28 10:57:19,941] [DEBUG] http://210.14.142.85:8003 "POST /hhyAppServer/sendphonecode HTTP/1.1" 200 None
+[2017-03-28 10:57:19,946] [INFO] 4 通过用户ID获取验证码成功，200,{"data":[],"count":null,"res":0,"dataobj":{}}
+[2017-03-28 10:57:19,984] [DEBUG] http://210.14.142.85:8003 "POST /hhyAppServer/getUserByUserid HTTP/1.1" 200 None
+[2017-03-28 10:57:19,986] [INFO] 5 通过用户ID获取用户信息成功，200,{"data":[{"user_id":"83957bcb-6108-48e1-ad7c-16f8a7a5f0e2","user_name":"18911651665","phone_number":"18566936353","email_address":null,"djrq":"2017-02-28 09:25:45","gxrq":null,"path":null}],"count":1,"res":1,"dataobj":{}}
+[2017-03-28 10:57:20,006] [DEBUG] http://210.14.142.85:8003 "POST /hhyAppServer/updateUserName HTTP/1.1" 200 None
+[2017-03-28 10:57:20,007] [INFO] 6 修改用户昵称成功，200,{"data":[],"count":null,"res":-1,"dataobj":{}}
+[2017-03-28 10:57:20,023] [DEBUG] http://210.14.142.85:8003 "POST /hhyAppServer/updateUserName HTTP/1.1" 200 None
+[2017-03-28 10:57:20,025] [INFO] 7 修改用户绑定的手机号成功，200,{"data":[],"count":null,"res":-1,"dataobj":{}}
+[2017-03-28 10:57:20,059] [DEBUG] http://210.14.142.85:8003 "POST /hhyAppServer/insertMessage HTTP/1.1" 200 None
+[2017-03-28 10:57:20,059] [INFO] 8 插入意见反馈信息成功，200,{"data":[],"count":null,"res":0,"dataobj":{}}
+[2017-03-28 10:57:20,092] [DEBUG] http://210.14.142.85:8003 "POST /hhyAppServer/updatePassword HTTP/1.1" 200 None
+[2017-03-28 10:57:20,092] [INFO] 9 修改密码成功，200,{"desc":"密码修改成功","code":1,"userID":"83957bcb-6108-48e1-ad7c-16f8a7a5f0e2"}

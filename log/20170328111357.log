@@ -1,0 +1,52 @@
+[2017-03-28 11:13:57,345] [DEBUG] Starting new HTTP connection (1): 127.0.0.1
+[2017-03-28 11:13:57,401] [DEBUG] http://127.0.0.1:8888 "POST http://210.14.142.85:8003/hhyAppServer/loginUser HTTP/1.1" 200 None
+[2017-03-28 11:13:57,404] [INFO] 1 登录成功，200,{"desc":"登录成功","code":1,"userID":"e09cdad5-2f87-41eb-b6aa-8137fb8f7dd6"}
+[2017-03-28 11:14:01,417] [DEBUG] http://127.0.0.1:8888 "POST http://210.14.142.85:8003/hhyAppServer/registerUser HTTP/1.1" 500 3924
+[2017-03-28 11:14:01,417] [ERROR] 2 注册接口报错！！！，【500】，<html><head><title>Apache Tomcat/7.0.27 - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 500 - </h1><HR size="1" noshade="noshade"><p><b>type</b> Exception report</p><p><b>message</b> <u></u></p><p><b>description</b> <u>The server encountered an internal error () that prevented it from fulfilling this request.</u></p><p><b>exception</b> <pre>org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:656)
+	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:560)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:641)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:722)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	com.thetransactioncompany.cors.CORSFilter.doFilter(CORSFilter.java:209)
+	com.thetransactioncompany.cors.CORSFilter.doFilter(CORSFilter.java:244)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+</pre></p><p><b>root cause</b> <pre>java.lang.NullPointerException
+	com.hhy.service.impl.UserServiceImpl.registerUser(UserServiceImpl.java:155)
+	com.hhy.controller.UserController.registerUser(UserController.java:155)
+	sun.reflect.GeneratedMethodAccessor76.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	java.lang.reflect.Method.invoke(Unknown Source)
+	org.springframework.web.bind.annotation.support.HandlerMethodInvoker.invokeHandlerMethod(HandlerMethodInvoker.java:175)
+	org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.invokeHandlerMethod(AnnotationMethodHandlerAdapter.java:421)
+	org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.handle(AnnotationMethodHandlerAdapter.java:409)
+	org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:774)
+	org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:719)
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:644)
+	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:560)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:641)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:722)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	com.thetransactioncompany.cors.CORSFilter.doFilter(CORSFilter.java:209)
+	com.thetransactioncompany.cors.CORSFilter.doFilter(CORSFilter.java:244)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+</pre></p><p><b>note</b> <u>The full stack trace of the root cause is available in the Apache Tomcat/7.0.27 logs.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/7.0.27</h3></body></html>
+[2017-03-28 11:14:02,673] [DEBUG] Starting new HTTP connection (1): 127.0.0.1
+[2017-03-28 11:14:02,832] [DEBUG] http://127.0.0.1:8888 "POST http://210.14.142.85:8003/hhyAppServer/getVerificationCode HTTP/1.1" 200 None
+[2017-03-28 11:14:02,832] [INFO] 3 通过手机号获取验证码成功，200,{"desc":"验证码发送失败","code":0,"userid":"","vcode":""}
+[2017-03-28 11:14:06,859] [DEBUG] http://127.0.0.1:8888 "POST http://210.14.142.85:8003/hhyAppServer/sendphonecode HTTP/1.1" 200 None
+[2017-03-28 11:14:06,861] [INFO] 4 通过用户ID获取验证码成功，200,{"data":[],"count":null,"res":0,"dataobj":{}}
+[2017-03-28 11:14:09,128] [DEBUG] http://127.0.0.1:8888 "POST http://210.14.142.85:8003/hhyAppServer/getUserByUserid HTTP/1.1" 200 None
+[2017-03-28 11:14:09,128] [INFO] 5 通过用户ID获取用户信息成功，200,{"data":[{"user_id":"83957bcb-6108-48e1-ad7c-16f8a7a5f0e2","user_name":"18911651665","phone_number":"18566936353","email_address":null,"djrq":"2017-02-28 09:25:45","gxrq":null,"path":null}],"count":1,"res":1,"dataobj":{}}
+[2017-03-28 11:14:10,394] [DEBUG] http://127.0.0.1:8888 "POST http://210.14.142.85:8003/hhyAppServer/updateUserName HTTP/1.1" 200 None
+[2017-03-28 11:14:10,395] [INFO] 6 修改用户昵称成功，200,{"data":[],"count":null,"res":-1,"dataobj":{}}
+[2017-03-28 11:14:10,677] [DEBUG] http://127.0.0.1:8888 "POST http://210.14.142.85:8003/hhyAppServer/updateUserName HTTP/1.1" 200 None
+[2017-03-28 11:14:10,680] [INFO] 7 修改用户绑定的手机号成功，200,{"data":[],"count":null,"res":-1,"dataobj":{}}
+[2017-03-28 11:14:10,950] [DEBUG] http://127.0.0.1:8888 "POST http://210.14.142.85:8003/hhyAppServer/insertMessage HTTP/1.1" 200 None
+[2017-03-28 11:14:10,951] [INFO] 8 插入意见反馈信息成功，200,{"data":[],"count":null,"res":0,"dataobj":{}}
+[2017-03-28 11:14:11,221] [DEBUG] http://127.0.0.1:8888 "POST http://210.14.142.85:8003/hhyAppServer/updatePassword HTTP/1.1" 200 None
+[2017-03-28 11:14:11,223] [INFO] 9 修改密码成功，200,{"desc":"密码修改成功","code":1,"userID":"83957bcb-6108-48e1-ad7c-16f8a7a5f0e2"}

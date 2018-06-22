@@ -1,0 +1,20 @@
+[2017-03-28 11:31:57,986] [DEBUG] Starting new HTTP connection (1): 127.0.0.1
+[2017-03-28 11:31:58,017] [DEBUG] http://127.0.0.1:8888 "POST http://210.14.142.85:8003/hhyAppServer/loginUser HTTP/1.1" 200 None
+[2017-03-28 11:31:58,019] [INFO] 1 登录成功，200,{"desc":"登录成功","code":1,"userID":"e09cdad5-2f87-41eb-b6aa-8137fb8f7dd6"}
+[2017-03-28 11:31:58,305] [DEBUG] http://127.0.0.1:8888 "POST http://210.14.142.85:8003/hhyAppServer/registerUser HTTP/1.1" 200 None
+[2017-03-28 11:31:58,305] [ERROR] 2 注册检查点匹配失败！！！，【200】，{"desc":"注册失败,验证码错误","code":0,"userID":""}
+[2017-03-28 11:32:10,308] [DEBUG] Starting new HTTP connection (1): 127.0.0.1
+[2017-03-28 11:32:10,487] [DEBUG] http://127.0.0.1:8888 "POST http://210.14.142.85:8003/hhyAppServer/getVerificationCode HTTP/1.1" 200 None
+[2017-03-28 11:32:10,487] [INFO] 3 通过手机号获取验证码成功，200,{"desc":"该手机号没有注册过","code":1,"userid":"","vcode":"577937"}
+[2017-03-28 11:32:22,622] [DEBUG] http://127.0.0.1:8888 "POST http://210.14.142.85:8003/hhyAppServer/sendphonecode HTTP/1.1" 200 None
+[2017-03-28 11:32:22,624] [INFO] 4 通过用户ID获取验证码成功，200,{"data":[],"count":null,"res":0,"dataobj":{}}
+[2017-03-28 11:32:22,905] [DEBUG] http://127.0.0.1:8888 "POST http://210.14.142.85:8003/hhyAppServer/getUserByUserid HTTP/1.1" 200 None
+[2017-03-28 11:32:22,907] [INFO] 5 通过用户ID获取用户信息成功，200,{"data":[{"user_id":"83957bcb-6108-48e1-ad7c-16f8a7a5f0e2","user_name":"18911651665","phone_number":"18566936353","email_address":null,"djrq":"2017-02-28 09:25:45","gxrq":null,"path":null}],"count":1,"res":1,"dataobj":{}}
+[2017-03-28 11:32:34,923] [DEBUG] http://127.0.0.1:8888 "POST http://210.14.142.85:8003/hhyAppServer/updateUserName HTTP/1.1" 200 None
+[2017-03-28 11:32:34,924] [INFO] 6 修改用户昵称成功，200,{"data":[],"count":null,"res":-1,"dataobj":{}}
+[2017-03-28 11:32:35,884] [DEBUG] http://127.0.0.1:8888 "POST http://210.14.142.85:8003/hhyAppServer/updateUserName HTTP/1.1" 200 None
+[2017-03-28 11:32:35,885] [INFO] 7 修改用户绑定的手机号成功，200,{"data":[],"count":null,"res":-1,"dataobj":{}}
+[2017-03-28 11:32:47,904] [DEBUG] http://127.0.0.1:8888 "POST http://210.14.142.85:8003/hhyAppServer/insertMessage HTTP/1.1" 200 None
+[2017-03-28 11:32:47,905] [INFO] 8 插入意见反馈信息成功，200,{"data":[],"count":null,"res":0,"dataobj":{}}
+[2017-03-28 11:32:49,194] [DEBUG] http://127.0.0.1:8888 "POST http://210.14.142.85:8003/hhyAppServer/updatePassword HTTP/1.1" 200 None
+[2017-03-28 11:32:49,194] [INFO] 9 修改密码成功，200,{"desc":"密码修改成功","code":1,"userID":"83957bcb-6108-48e1-ad7c-16f8a7a5f0e2"}

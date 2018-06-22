@@ -1,0 +1,18 @@
+[2017-03-29 17:12:53,819] [DEBUG] Starting new HTTP connection (1): 210.14.142.85
+[2017-03-29 17:12:53,858] [DEBUG] http://210.14.142.85:8003 "POST /hhyAppServer/loginUser HTTP/1.1" 200 None
+[2017-03-29 17:12:53,859] [INFO] 1 登录成功~【200】,{"desc":"登录成功","code":1,"userID":"e09cdad5-2f87-41eb-b6aa-8137fb8f7dd6"}
+[2017-03-29 17:12:53,861] [DEBUG] Starting new HTTP connection (1): 210.14.142.85
+[2017-03-29 17:12:53,895] [DEBUG] http://210.14.142.85:8003 "POST /hhyAppServer/getUserByUserid HTTP/1.1" 200 None
+[2017-03-29 17:12:53,897] [INFO] 5 通过用户ID获取用户信息成功~【200】,{"data":[{"user_id":"83957bcb-6108-48e1-ad7c-16f8a7a5f0e2","user_name":"18911651665","phone_number":"18566936353","email_address":null,"djrq":"2017-02-28 09:25:45","gxrq":null,"path":null}],"count":1,"res":1,"dataobj":{}}
+[2017-03-29 17:12:53,901] [DEBUG] Starting new HTTP connection (1): 210.14.142.85
+[2017-03-29 17:12:53,928] [DEBUG] http://210.14.142.85:8003 "POST /hhyAppServer/updateUserName HTTP/1.1" 200 None
+[2017-03-29 17:12:53,930] [INFO] 6 修改用户昵称成功~【200】,{"data":[],"count":null,"res":-1,"dataobj":{}}
+[2017-03-29 17:12:53,933] [DEBUG] Starting new HTTP connection (1): 210.14.142.85
+[2017-03-29 17:12:53,966] [DEBUG] http://210.14.142.85:8003 "POST /hhyAppServer/updateUserName HTTP/1.1" 200 None
+[2017-03-29 17:12:53,967] [INFO] 7 修改用户绑定的手机号成功~【200】,{"data":[],"count":null,"res":-1,"dataobj":{}}
+[2017-03-29 17:12:53,971] [DEBUG] Starting new HTTP connection (1): 210.14.142.85
+[2017-03-29 17:12:53,993] [DEBUG] http://210.14.142.85:8003 "POST /hhyAppServer/insertMessage HTTP/1.1" 200 None
+[2017-03-29 17:12:53,994] [INFO] 8 插入意见反馈信息成功~【200】,{"data":[],"count":null,"res":0,"dataobj":{}}
+[2017-03-29 17:12:53,999] [DEBUG] Starting new HTTP connection (1): 210.14.142.85
+[2017-03-29 17:12:54,022] [DEBUG] http://210.14.142.85:8003 "POST /hhyAppServer/updatePassword HTTP/1.1" 200 None
+[2017-03-29 17:12:54,023] [INFO] 9 修改密码成功~【200】,{"desc":"密码修改成功","code":1,"userID":"83957bcb-6108-48e1-ad7c-16f8a7a5f0e2"}
